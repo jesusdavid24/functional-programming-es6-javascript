@@ -101,12 +101,11 @@ const cars =
     { brand: 'Ferrari', price: 9541, model: 1970 } 
 ];
 
-const sum = 0;
-
 const bmwSum = () => {
-    const price = cars.map(x => x.price)
-    const total = price.reduce((acc, currentValue) => acc + currentValue, sum)
-    return total;
+  const total = cars
+    .filter(x => x.brand === 'BMW')
+    .reduce((acc, currentValue) => acc + currentValue.price, 0);
+  return total;
 }
 
 console.log(bmwSum())

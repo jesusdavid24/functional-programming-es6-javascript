@@ -107,7 +107,7 @@ const ferraris = () => {
 console.log(ferraris())
 
 const nineties = () => {
-    return cars.filter(x => x.model >= '1980' && x.model<= '1990' )
+    return cars.filter(x => x.model >= 1980 && x.model<= 1990 )
 }
 
 console.log(nineties())
